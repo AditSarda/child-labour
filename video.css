@@ -1,0 +1,65 @@
+#container {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 1325px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+#fight {
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+#effects {
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(118, 7, 146);
+}
+
+* {
+    background-color: peachpuff;
+}
+
+#video {
+    background-color: cyan;
+    color: black;
+    cursor: pointer;
+}
+
+#Donate {
+    background-color: rgb(255, 0, 0);
+    color: black;
+    cursor: pointer;
+}
+
+#home {
+    background-color: rgb(60, 255, 0);
+    color: black;
+    cursor: pointer;
+}
