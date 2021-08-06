@@ -1,99 +1,83 @@
-var Donate = document.getElementById("Donate");
-
-var link = "https://www.savethechildren.in/donate";
-
-Donate.onclick = () => {
-    window.open(link);
-}
-
-const video = document.getElementById("video");
-
-video.onclick = () => {
-    location.href = "./video.html";
-}
-
-const home = document.getElementById("home");
-
-home.onclick = () => {
-    location.href = "./index.html";
-}
-
-// var button = document.getElementById("qbutton");
-
 var yes = document.getElementById("yes");
 
 var no = document.getElementById("no");
 
 var movie = "https://youtu.be/RtoD5B1dfIc";
 
+var homep = document.getElementById("homep");
 
-
-
-yes.onclick = () => {
-    window.open(movie);
-}
-
-no.onclick = () => {
+homep.onclick = () => {
     location.href = "./index.html";
 }
 
-var quiz = document.getElementById("quiz");
+function yes() {
+    window.open(movie);
+}
 
-// questions.onclick = () => {
-//     location.href = "./quiz.html";
-// }
-
-// var answer = document.getElementById("answer");
-// var nicely = document.getElementById("nicely");
-// var love = document.getElementById("love");
-// var prison = document.getElementById("prison");
-
-// var response = "This is the correct answer";
-
-// var wrong = "No this is wrong. The answer is  Forcing children to do dangerouswork even if they don't want to ";
+function no() {
+    location.href = "./index.html";
+}
 
 var submit = document.getElementById("submit1");
 
+// var submitc = document.getElementById("submitc");
+
 var questions = ["qoone", "qttwo", "qthree", "qfour", "qfive"];
-
-quiz.onclick = () => {
-    location.href = "./quiz.html";
-}
-
-// var Text = "Total number is";
-
-// if (answer.checked) {
-//     return response;
-// }
-
-// var qone = document.getElementById("qone");
-// qone.onclick = () => {
-//     let i;
-// }
-// qone.onclick = () => {
-//     for (let i = 12; i < 125; i + 2) {
-//         Text.innerHTML = "Total number is" + i;
-//     }
-// }
 
 const divanswer = document.getElementById("quesone");
 
+const divans = document.getElementById("divans");
 
 
 
-submit1.onclick = () => {
-    if (answer.checked) {
+
+function submit1() {
+    if (document.getElementById('answer').checked) {
         divanswer.innerHTML = "This is the Correct Answer";
-
-        // } else if (nicely.checked) {
-        //     document.write("No this is the wrong answer. The answer is  Forcing children to do dangerouswork even if they don't want to  ");
-        // } else if (love.checked) {
-        //     document.write("No this is the wrong answer. The answer is  Forcing children to do dangerouswork even if they don't want to  ");
-        // } else if (prison.checked) {
-        //     document.write("No this is the wrong answer. The answer is  Forcing children to do dangerouswork even if they don't want to  ");
-        // } else {
-        //     document.write("Invalid response")
     } else {
         divanswer.innerHTML = "This is the wrong answer. The answer is  Forcing children to do dangerouswork even if they don't want to";
+    }
+}
+
+function submit2() {
+    if (document.getElementById('answe').checked) {
+        divans.innerHTML = "This is the Correct Answer";
+    } else {
+        divans.innerHTML = "This is the wrong answer.The correct answer is Poverty";
+    }
+}
+
+function submitc() {
+    if (document.getElementById('answ').checked) {
+        divan.innerHTML = "This is the Correct Answer";
+    } else {
+        divan.innerHTML = "This is the wrong answer.The correct answer is Lungs";
+    }
+}
+
+function submitd() {
+    if (document.getElementById('ans').checked) {
+        diva.innerHTML = "This is the Correct Answer";
+    } else {
+        diva.innerHTML = "This is the wrong answer.The correct answer is Strike ";
+    }
+}
+
+function submite() {
+    if (document.getElementById('an').checked) {
+        divas.innerHTML = "This is the Correct Answer";
+    } else {
+        divas.innerHTML = "This is the wrong answer.The correct answer is A group of workers who work together to improve working conditions or get higher wages  ";
+    }
+}
+
+const thanks = document.getElementById("thanks");
+const sorry = document.getElementById("sorry");
+
+function response() {
+    if (document.getElementById("thanks").checked) {
+        document.getElementById("response").write = "Thanks";
+    } else {
+        document.getElementById("response").write = "Sorry.Will try to improve the webpage";
     }
 }

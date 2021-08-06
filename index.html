@@ -13,10 +13,10 @@
     <header>
         <nav id="navbar">
             <ul id="container">
-                <li id="home">Home</a></li>
-                <li id="video"> Video Zone</a></li>
-                <li id="Donate"> Donate</a></li>
-                <button id="quiz">Quiz</button>
+                <li id="home"><a href="./index.html">Home</a></li>
+                <li id="video"><a href="./video.html">Video Zone</a></li>
+                <li id="Donate"> <a href="https://www.savethechildren.in/donate">Donate</a></li>
+                <button id="quiz"><a href="./quiz.html">Quiz</a></button>
             </ul>
         </nav>
     </header>
@@ -84,14 +84,23 @@
 
     <div id="conditional statement">
         <button id="qbutton">Want to see A Movie?</button>
-        <button id="yes">Yes</button>
-        <button id="no">No</button></div>
+        <button onclick="yes()">Yes</button>
+        <button onclick="no()">No</button></div>
 
     <div id="loop">
         <button id="qone">What the total no in 2010?</button>
         <button id="qtwo">What the total no in 2020?</button>
-
     </div>
+    <h3>Was the information useful?</h3>
+    <input type="radio" name="feedback" id="thanks">
+    <label for="">Yes</label>
+
+    <input type="radio" name="feedback" id="sorry">
+    <label for="">No</label>
+
+    <button onclick="response()">Submit Response</button>
+
+    <div id="respose"></div>
 
     <script src="./app.js"></script>
     <script src="./video.js"></script>

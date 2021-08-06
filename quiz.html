@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <nav><button id="homep">Back to Home Page</button></nav>
     <div><img id="canavaimg" src="./assets/Quiz time.png" alt=""></div>
 
     <div>
@@ -23,7 +24,7 @@
             want to</label><br><br>
         <input type="radio" name="treating" id="prison">
         <label for="">Taking children to prison </label> <br><br><br>
-        <button class="submit" id="submit1">Submit</button>
+        <button class="submit" onclick="submit1()">Submit</button>
         <div id="quesone">answer</div>
     </div>
 
@@ -34,18 +35,19 @@
         <label for="">No education</label><br><br>
         <input type="radio" name="cause" id="">
         <label for="">Factory work</label><br><br>
-        <input type="radio" name="cause" id="answer">
+        <input type="radio" name="cause" id="answe">
         <label for="">Poverty</label><br><br>
         <input type="radio" name="cause" id="">
         <label for="">Sweatshop </label> <br><br><br>
-        <button class="submitb" id="submitb">Submit</button>
+        <button class="submit2" onclick="submit2()" id="submit2">Submit</button>
+        <div id="divans">answer</div>
     </div>
 
     <div>
 
-        <h1 id="qthree">Of the following types of diseases ,which BEST describes the type a child would get while
+        <h1 id=" qthree">Of the following types of diseases ,which BEST describes the type a child would get while
             working?</h1>
-        <input type="radio" name="organ" id="answer">
+        <input type="radio" name="organ" id="answ">
         <label for="">Lung</label><br><br>
         <input type="radio" name="organ" id="">
         <label for="">Heart</label><br><br>
@@ -53,34 +55,36 @@
         <label for="">Liver</label><br><br>
         <input type="radio" name="organ" id="">
         <label for="">Kidney </label> <br><br><br>
-        <button class="submit" id="submitc">Submit</button>
+        <button class="submit" id="submitc" onclick="submitc()">Submit</button>
+        <div id="divan"></div>
     </div>
 
     <div>
 
         <h1 id="qfour">When workers refuse to go to work ,it is called a :</h1>
-        <input type="radio" name="" id="">
+        <input type="radio" name="refuse" id="">
         <label for="">picket</label><br><br>
-        <input type="radio" name="" id="answer">
+        <input type="radio" name="refuse" id="ans">
         <label for="">Strike</label><br><br>
-        <input type="radio" name="" id="">
+        <input type="radio" name="refuse" id="">
         <label for="">day off</label><br><br>
-        <input type="radio" name="" id="">
+        <input type="radio" name="refuse" id="">
         <label for="">stink </label> <br><br><br>
-        <button class="submit" id="submitd">Submit</button>
-        <div></div>
+        <button class="submit" id="submitd" onclick="submitd()">Submit</button>
+        <div id="diva"></div>
     </div>
 
     <div>
 
         <h1 id="qfive">Q.5 What is a labour union?</h1>
 
-        <input type="radio" name="treating" id="answer">
+        <input type="radio" name="treating" id="an">
         <label for="">A group of workers who work together to improve working conditions or get higher wages
         </label><br><br>
         <input type="radio" name="treating" id="prison">
         <label for="">a group of bosses who work together to get higher wages </label> <br><br><br>
-        <button class="submit" id="submite">Submit</button>
+        <button class="submit" onclick="submite()" id="submite">Submit</button>
+        <div id="divas"></div>
     </div>
     <script src="./app.js"></script>
 </body>
