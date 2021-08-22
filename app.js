@@ -2,17 +2,15 @@ var yes = document.getElementById("yes");
 
 var no = document.getElementById("no");
 
-var movie = "https://youtu.be/RtoD5B1dfIc";
-
 var homep = document.getElementById("homep");
 
-homep.onclick = () => {
-    location.href = "./index.html";
-}
+// homep.onclick = () => {
+//     location.href = "./index.html";
+// }
 
-function yes() {
-    window.open(movie);
-}
+// function yes() {
+//     window.open(movie);
+// }
 
 function no() {
     location.href = "./index.html";
